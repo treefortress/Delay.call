@@ -1,4 +1,19 @@
 CallLater
 =========
 
-A simple managed callBack scheduler. Use as an alternative to setTimeout. 
+An alternative to setTimeout, which gives you control over the time elapsed, and ability to easily remove scheduled calls. 
+
+It also provides convenience methods for clearing all existing Calls, for example, when your player has died, you might want to release any pending calls.
+
+### USAGE
+CallLater.add(myFunction, 1000, [arg1, arg2]);
+CallLater.remove(myFunction);
+
+//CallLater must be updated manually, you pass in the time elapsed:
+CallLater.update(deltaTime);
+
+//Perhaps your game has a slowMotion mode, you can have all callbacks take that into effect:
+CallLater.update(deltaTime * Game.slowFactor);
+
+### License
+[WTFPL][license]
