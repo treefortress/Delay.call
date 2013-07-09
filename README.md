@@ -1,4 +1,5 @@
 [license]: https://github.com/treefortress/CallLater/raw/master/license.txt
+[SRC]: https://github.com/treefortress/CallLater/blob/master/treefortress/utils/CallLater.as
 
 CallLater
 =========
@@ -6,6 +7,8 @@ CallLater
 An alternative to setTimeout, which gives you control over the time elapsed, and ability to easily remove scheduled calls. 
 
 It also provides convenience methods for clearing all existing Calls, for example, when your player has died, you might want to release any pending calls.
+
+[View Source Code][SRC]
 
 ### USAGE
 
