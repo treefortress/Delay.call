@@ -8,14 +8,17 @@ An alternative to setTimeout, which gives you control over the time elapsed, and
 It also provides convenience methods for clearing all existing Calls, for example, when your player has died, you might want to release any pending calls.
 
 ### USAGE
- **CallLater.add(myFunction, 1000, [arg1, arg2]);
- **CallLater.remove(myFunction);
 
+** Basic Usage **
+CallLater.add(myFunction, 1000, [arg1, arg2]);**
+CallLater.remove(myFunction);**
+
+** Updating **
 CallLater is updated manually, you pass in the time elapsed, giving you full control:
- **CallLater.update(deltaTime);
+* CallLater.update(deltaTime);
 
-//Perhaps your game has a slowMotion mode, you can have all callbacks take that into effect:
- **CallLater.update(deltaTime * Game.slowFactor);
+Perhaps your game has a slowMotion mode, you can have all callbacks take that into effect:
+* CallLater.update(deltaTime * Game.slowFactor);
 
 ### License
 [WTFPL][license]
