@@ -9,11 +9,11 @@ It also provides convenience methods for clearing all existing Calls, for exampl
 
 ### USAGE
 
-** Basic Usage **
-CallLater.add(myFunction, 1000, [arg1, arg2]);**
-CallLater.remove(myFunction);**
+**Basic Usage**
+* CallLater.add(myFunction, 1000, [arg1, arg2]);
+* CallLater.remove(myFunction);
 
-** Updating **
+**Updating**
 CallLater is updated manually, you pass in the time elapsed, giving you full control:
 * CallLater.update(deltaTime);
 
